@@ -11,6 +11,9 @@
     font-size: 30px;
 
   }
+  .flex-container div {
+    color: red;
+  }
   .flex-container  img{
       width: 50px;
       height: 65px;
@@ -31,6 +34,7 @@
   .center p{
     color: blanchedalmond;
     justify-content: space-between;
+    margin: 150px;
   }
   .full{
     display: flex;
@@ -47,9 +51,32 @@
 
 
   }
+  .list ul {
+    margin: 50px;
+    font-size: 50px;
+    text-justify: newspaper;
+  }  
   .footer{
     display: flex;
     background-color: DodgerBlue;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  [class*=".flex-container"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+ /*    For tablets:*/ 
+    .center{width:80%;}
+    .full{width:100%;}
+    .list{width:80%;}
+    .footer{width:100%;}
+  }
+  @media only screen and (min-width: 768px) {
+   /* For desktop:*/ 
+  .center{width:100%;}
+    .full{width:100%;}
+    .list{width:100%;}
+    .footer{width:100%;}
   }
